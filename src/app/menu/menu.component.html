@@ -1,0 +1,14 @@
+<nav class="menu">
+  <div
+    *ngFor="let item of menu"
+    class="menu__item"
+    [routerLinkActive]="'menu__item-active'"
+    [routerLinkActiveOptions]="{ exact: true }">
+    <a
+      class="menu__link"
+      [id]="item.id"
+      [routerLink]="[item.href]">
+      {{ item.name }}
+    </a>
+  </div>
+</nav>

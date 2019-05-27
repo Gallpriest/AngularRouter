@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  background-color: orangered;
+
+  &__item {
+    cursor: pointer;
+    flex-grow: 1;
+    height: 100%;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.15s ease-in-out;
+
+    > a {
+      color: #fff;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    &-active {
+      background-color: darkred;
+      
+      > a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
