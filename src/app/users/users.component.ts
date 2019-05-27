@@ -14,6 +14,7 @@ export class UsersComponent implements OnInit {
   }
 
   routeToFeatures() {
+    // navigate programmatically
     this.router.navigate(['features'])
   }
 

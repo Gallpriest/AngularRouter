@@ -6,8 +6,9 @@ import { UsersComponent } from './users/users.component';
 import { HomeComponent } from './home/home.component';
 import { FeaturesComponent } from './features/features.component';
 import { MenuComponent } from './menu/menu.component';
-import {AppRouter} from './app.routing';
+import { AppRouter } from './app.routing';
 import { ChildComponent } from './child/child.component';
+import { UserComponent } from './users/users/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChildComponent } from './child/child.component';
     HomeComponent,
     FeaturesComponent,
     MenuComponent,
-    ChildComponent
+    ChildComponent,
+    UserComponent
   ],
   imports: [
     AppRouter,
